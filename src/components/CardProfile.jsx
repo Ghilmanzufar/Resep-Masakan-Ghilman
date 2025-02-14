@@ -48,7 +48,7 @@ export function CardProfileComponent() {
             formData.append("photo", editedUser.photo);
         }
 
-        const response = await fetch("http://resepmasakanghilman.my.id/update_user.php", {
+        const response = await fetch("https://resepmasakanghilman.my.id/update_user.php", {
             method: "POST",
             body: formData,
         });

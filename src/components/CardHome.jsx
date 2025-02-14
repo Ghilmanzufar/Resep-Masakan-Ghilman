@@ -18,7 +18,7 @@ export function CardHomeComponent({ type, searchQuery }) {
     }, []);
 
     useEffect(() => {
-        fetch("http://resepmasakanghilman.my.id/read_resep.php")
+        fetch("https://resepmasakanghilman.my.id/read_resep.php")
             .then((response) => response.json())
             .then((data) => {
                 if (type === "populer") {
@@ -40,7 +40,7 @@ export function CardHomeComponent({ type, searchQuery }) {
             return;
         }
     
-        fetch("http://resepmasakanghilman.my.id/save_resep.php", {
+        fetch("https://resepmasakanghilman.my.id/save_resep.php", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ user_id: userId, resep_id: resepId }),

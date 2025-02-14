@@ -11,7 +11,7 @@ export default function RecipeDetail() {
     const [resep, setResep] = useState(null);
 
     useEffect(() => {
-        fetch(`http://resepmasakanghilman.my.id/detail_resep.php?id=${id}`)
+        fetch(`https://resepmasakanghilman.my.id/detail_resep.php?id=${id}`)
             .then((response) => response.json())
             .then((data) => {
                 console.log("Data yang diterima:", data);

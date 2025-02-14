@@ -19,7 +19,7 @@ export function FormLoginComponent() {
         }
 
         try {
-            const response = await fetch("http://resepmasakanghilman.my.id/login_user.php", {
+            const response = await fetch("https://resepmasakanghilman.my.id/login_user.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: new URLSearchParams({ email, password }),

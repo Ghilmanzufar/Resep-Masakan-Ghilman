@@ -52,7 +52,7 @@ export function NavbarComponent() {
                     <div className="flex items-center">
                         <img src="/Logo.svg" alt="Logo" className="mr-2 h-8 w-8" />
                         <span className="self-center whitespace-nowrap text-xl font-semibold text-black">
-                            Resep Masakan Ghilman
+                            RMG
                         </span>
                     </div>
                 </NavbarBrand>

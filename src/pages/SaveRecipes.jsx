@@ -19,7 +19,7 @@ const SavedRecipes = () => {
     }, []);
 
     const fetchSavedRecipes = (userId) => {
-        fetch(`http://localhost/Project_resep_Masakan/be_resep/read_save_resep.php?user_id=${userId}`)
+        fetch(`http://resepmasakanghilman.my.id/read_save_resep.php?user_id=${userId}`)
             .then(response => response.json())
             .then(data => {
                 console.log("Resep Tersimpan dari API: ", data);
@@ -29,7 +29,7 @@ const SavedRecipes = () => {
     };
 
     const handleDelete = (recipeId) => {
-        fetch("http://localhost/Project_resep_Masakan/be_resep/delete_save_resep.php", {
+        fetch("http://resepmasakanghilman.my.id/delete_save_resep.php", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ resep_id: recipeId }),

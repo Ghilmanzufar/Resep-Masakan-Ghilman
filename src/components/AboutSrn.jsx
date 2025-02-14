@@ -19,7 +19,7 @@ const ContactSuggestionWithMap = () => {
 
         try {
         const response = await fetch(
-            "http://localhost/Project_resep_Masakan/be_resep/save_saran.php",
+            "http://resepmasakanghilman.my.id/save_saran.php",
             {
             method: "POST",
             headers: {

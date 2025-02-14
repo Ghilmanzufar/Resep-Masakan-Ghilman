@@ -33,7 +33,7 @@ export function RegisterComponent() {
         };
 
         try {
-            const response = await fetch("http://localhost/Project_resep_Masakan/be_resep/create_user.php", {
+            const response = await fetch("http://resepmasakanghilman.my.id/create_user.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),

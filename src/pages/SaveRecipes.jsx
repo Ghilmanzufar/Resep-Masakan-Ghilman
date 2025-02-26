@@ -16,7 +16,6 @@ const SavedRecipes = () => {
         if (loggedUser) {
             fetchSavedRecipes(loggedUser.id);
         }
-        console.log(localStorage.getItem("loggedUser"));
     }, []);
 
     const fetchSavedRecipes = (userId) => {

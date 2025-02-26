@@ -47,6 +47,7 @@ export function CardHomeComponent({ type, searchQuery }) {
         })
             .then((response) => response.json())
             .then((data) => {
+                console.log("Response dari server:", data); // Tambahkan ini
                 if (data.success) {
                     toast.success("Resep berhasil disimpan! ✅", {
                         position: "top-center",

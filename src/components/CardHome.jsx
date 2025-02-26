@@ -58,7 +58,7 @@ export function CardHomeComponent({ type, searchQuery }) {
                         draggable: true,
                     });
                 } else {
-                    toast.error("Gagal menyimpan resep! ❌", {
+                    toast.error("Gagal menyimpan resep! Resep sudah tersimpan ❌", {
                         position: "top-center",
                         autoClose: 2000,
                         hideProgressBar: false,

@@ -61,6 +61,7 @@ export function CardProfileComponent() {
             setUser(updatedUser);
             setIsEditing(false);
             setShowAlert(true);
+            console.log("Response dari server:", data);
             setTimeout(() => setShowAlert(false), 5000);
         } else {
             console.error("Update failed:", data.message);
@@ -154,7 +155,7 @@ export function CardProfileComponent() {
                                         className="w-16 h-16 rounded-full object-cover"
                                     />
                                 ) : (
-                                    "Belum ada photo"
+                                    <p>Belum ada photo</p>
                                 )}
                             </dd>
                         </div>
